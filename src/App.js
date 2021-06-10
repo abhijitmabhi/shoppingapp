@@ -1,12 +1,21 @@
 import './App.css';
+import { Route, Switch } from 'react-router-dom';
+import Layout from './components/layouts/Layout';
+import Products from './pages/Products';
+import Settings from './pages/Settings';
 
 function App() {
   return (
-    <div className="">
-      <div class="alert alert-primary" role="alert">
-       From app.js
-      </div>
-    </div>
+    <Layout>
+      <Switch>
+        <Route path='/' exact>
+          <Products/>
+        </Route>
+        <Route path='/settings'>
+          <Settings/>
+        </Route>
+      </Switch>
+    </Layout>
   );
 }
 
