@@ -6,14 +6,15 @@ const Card = (props) => {
         <div className="card-deck pt-3 h-100">
             <div className="card shadow h-100">
                 <div className={props.isSale ? classes.bag_image : ''}>
-                    <img src={props.image} className={'img-fluid img-thumbnail'} />
+                    <img src={props.image} alt="for product" className={'img-fluid img-thumbnail'} />
                 </div>
                 <div className="card-body">
                     <h5 className="card-title text-primary">{props.title}</h5>
-                    <p className="card-text text-secondary">The is the description of the product.</p>
+                    <span className="badge bg-warning text-dark">{props.description}</span>
+                    {/* <p className="card-text text-secondary">{props.description}</p> */}
                 </div>
                 <div className="card-footer">
-                    <small className="text-muted">Price: <b className="text-success">{props.footer}</b></small>
+                    <small className="text-dark">Price: <b className="text-primary">{props.footer}</b></small>
                 </div>
             </div>
         </div>

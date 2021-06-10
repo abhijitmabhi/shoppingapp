@@ -7,6 +7,7 @@ const ProductItem = (props) => {
            <Card 
                 image={props.productImage}
                 title={props.productName}
+                description={props.type}
                 footer={props.price}
                 isSale={props.isSale}
             />
