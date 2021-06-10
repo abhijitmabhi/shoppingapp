@@ -1,10 +1,15 @@
 import React from 'react'
+import Card from '../ui/Card'
 
 const ProductItem = (props) => {
     return (
         <div>
-            <h5>{props.productName}</h5>
-            <p>{props.price}</p>
+           <Card 
+                image={props.productImage}
+                title={props.productName}
+                footer={props.price}
+                isSale={props.isSale}
+            />
         </div>
     )
 }

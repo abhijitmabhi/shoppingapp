@@ -1,0 +1,17 @@
+
+  .bag_image::before{
+    background-color: red;
+    content: 'SALE';
+    /* border-radius: 50px; */
+    /* display: inline-block; */
+    width: 50px;
+    height: 50px;
+    
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    position:absolute;
+    /* top: 0;
+    left: 0%;
+    transform: translate(5%, 5%); */
+  }
