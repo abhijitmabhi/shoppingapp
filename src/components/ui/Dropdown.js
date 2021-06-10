@@ -3,8 +3,8 @@ import React from 'react'
 const Dropdown = (props) => {
     return (
         <div className="col-3">
-            <div className="">
-                <div className="">
+            <div>
+                <div>
                     <select className="form-select" onChange={props.onSelect}>
                         <option value="All">All</option>
                         <option value="Beer">Beer</option>
