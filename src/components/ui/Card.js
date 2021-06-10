@@ -5,7 +5,6 @@ const Card = (props) => {
     return (
         <div className="card-deck pt-3 h-100">
             <div className="card shadow h-100">
-                {/* <img src={props.image} className="img-fluid img-thumbnail" alt="..." /> */}
                 <div className={props.isSale ? classes.bag_image : ''}>
                     <img src={props.image} className={'img-fluid img-thumbnail'} />
                 </div>
