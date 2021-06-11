@@ -9,7 +9,7 @@ const Card = (props) => {
                     <img src={props.image} alt="for product" className={'img-fluid img-thumbnail'} />
                 </div>
                 <div className="card-body">
-                    <h5 className="card-title text-primary">{props.title}</h5>
+                    <h6 className="card-title text-primary">{props.title}</h6>
                     <span className="badge bg-warning text-dark">{props.description}</span>
                 </div>
                 <div className="card-footer">
